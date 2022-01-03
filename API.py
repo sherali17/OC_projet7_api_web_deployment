@@ -35,12 +35,6 @@ id_client = pd.DataFrame(id_client)
 
 
 # routes
-# home
-@app.route('/')
-def welcome():
-    url_dasboard = "www.heroku.scoringapp2021v2.com"
-    return "API de prédiction est bien connectée...Accédez au Dasboard à l'adresse suivante : {}".format(url_dasboard)
-
 
 # Entraînement du modèle
 @app.route("/init_model", methods=["GET"])
